@@ -202,7 +202,7 @@ header {
 }
 /* The hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/AtlantaSkylineMorning.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://github.com/Takomane/takomane.github.io/blob/fad079c8c2c6ff814baeb92dd1191e183b77b677/images/AtlantaSkylineMorning.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
