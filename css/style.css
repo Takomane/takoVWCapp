@@ -83,6 +83,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
   background-color: #F7F7F7;
+  height: 100%;
 }
 
 nav {
@@ -132,7 +133,7 @@ content-wrap {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
@@ -173,7 +174,7 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ECA6A6;
+  background-color: #4CAF50;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -188,7 +189,7 @@ header {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #4CAF50}
+.dropdown-content a:hover {background-color: #fff}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -198,4 +199,28 @@ header {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #4CAF50;
+}
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
