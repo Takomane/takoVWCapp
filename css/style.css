@@ -179,53 +179,12 @@ footer {
   background-color: #4CAF50;
 }
 
-/* The sub dropdown */
-.dropdown ul {
-  /* Border */
-  border: 1px solid rgba(0, 0, 0, 0.3);
-
-  /* Hidden by default */
-  display: none;
-
-  /* Absolute position */
-  left: 0;
-  position: absolute;
-  top: 100%;
-
-  /* Reset styles */
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-
-  /* Width */
-  width: 200px;
-}
-
-/* The second level sub dropdown */
-.dropdown ul ul {
-  left: 100%;
-  position: absolute;
-  top: 0;
-}
-
-/* Change background color of list item when being hovered */
-.dropdown li:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-/* Show the direct sub dropdown when hovering the list item */
-.dropdown li:hover > ul {
-  display: block;
-}
-
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),;
-  height: 50%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  object-fit: cover;
-  background-color: #ECA6A6;
 }
 
 .hero-text {
