@@ -56,8 +56,8 @@ select {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #333;
-  background-color: #F7F7F7;
+  color: #fff;
+  background-color: #ECA6A6;
   height: 100%;
 }
 
@@ -151,7 +151,7 @@ content-wrap {
 header {
   background-color: #ECA6A6;
   color: #fff;
-  padding: 1rem;
+  padding: .75rem;
   width: 100%;
 }
 
@@ -245,7 +245,7 @@ footer {
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 40% }
 }
 
 /* The typewriter cursor effect */
