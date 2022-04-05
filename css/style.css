@@ -96,11 +96,15 @@ p {
 
   .div1 { 
     grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .div1animation{
+    animation: myanimationdiv1 4s;
     border-radius: 50%;
+    width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
   }
 
   .div2 { grid-area: 1 / 2 / 2 / 3; }
@@ -109,20 +113,27 @@ p {
 
   .div4 { 
     grid-area: 2 / 2 / 3 / 3;
-    border-radius: 50%;
+   }
+   .div4animation{
+    animation: myanimationdiv4 4s;
+    border-radius: 60%;
+    width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
-   }
+  }
 
   .div5 { 
     grid-area: 3 / 1 / 4 / 2; 
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;}
+}
+.div5animation{
+  animation: myanimationdiv5 4s;
+  border-radius: 50%;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
   .div6 { grid-area: 3 / 2 / 4 / 3; }
 
@@ -268,4 +279,34 @@ footer {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+@keyframes myanimationdiv1 {
+  from {
+    margin-right: -100%;
+  }
+  100% { 
+    margin-right: 100%; 
+    transform: rotate(1440deg); 
+}
+}
+
+@keyframes myanimationdiv4 {
+  from {
+    margin-left: -100%;
+  }
+  100% { 
+    margin-left: 100%; 
+    transform: rotate(1440deg); 
+}
+}
+
+@keyframes myanimationdiv5 {
+  from {
+    margin-right: -100%;
+  }
+  100% { 
+    margin-right: 100%; 
+    transform: rotate(1440deg); 
+}
 }
