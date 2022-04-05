@@ -78,11 +78,12 @@ h1 {
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 1px;
-  font-size: 50px;
+  font-size: 4vw;
  }
 
 p {
   text-align:center;
+  font-size: 2vw;
 }
 
 .parent {
@@ -223,7 +224,7 @@ footer {
 .hero-text {
   text-align: center;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 4vw;
   position: absolute;
   font-family: Arial, Helvetica, sans-serif;
   white-space: nowrap; /* Keeps the content on a single line */
@@ -236,20 +237,20 @@ footer {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em;
   animation: 
-    typing 7s steps(40, end),
+    typing 5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 40% }
+  to { width: 60% }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #ECA6A6; }
+  60% { border-color: #ECA6A6; }
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
