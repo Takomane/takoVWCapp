@@ -114,7 +114,8 @@ p {
   .div4 { 
     grid-area: 2 / 2 / 3 / 3;
    }
-   .div4animation{
+
+  .div4animation{
     animation: myanimationdiv4 4s;
     border-radius: 60%;
     width: 75%;
@@ -126,28 +127,20 @@ p {
   .div5 { 
     grid-area: 3 / 1 / 4 / 2; 
 }
-.div5animation{
-  animation: myanimationdiv5 4s;
-  border-radius: 50%;
-  width: 75%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+  .div5animation{
+   animation: myanimationdiv5 4s;
+    border-radius: 50%;
+    width: 75%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
 }
 
   .div6 { grid-area: 3 / 2 / 4 / 3; }
 
 div {
   text-align: center;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  padding: 4rem;
 }
 
 page-container {
@@ -176,7 +169,7 @@ footer {
   text-align: center;
 }
 
-/* Style The Dropdown Button */
+/* Dropdown Button */
 .dropbtn {
   background-color: #fff;
   color: black;
@@ -186,13 +179,11 @@ footer {
   cursor: pointer;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -202,7 +193,6 @@ footer {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -210,15 +200,12 @@ footer {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #fff}
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #fff;
 }
@@ -280,7 +267,7 @@ footer {
     scroll-behavior: auto !important;
   }
 }
-
+/*image rolling in animation */
 @keyframes myanimationdiv1 {
   from {
     margin-right: -100%;
