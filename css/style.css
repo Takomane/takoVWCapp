@@ -93,6 +93,7 @@ p {
   grid-column-gap: 0px;
   grid-row-gap: 50px;
   Padding-top: 50px;
+  padding-bottom: 50px;
   }
 
   .div1 { 
@@ -308,6 +309,7 @@ footer {
   grid-column-gap: 6px;
   grid-row-gap: 6px;
   Padding-top: 50px;
+  padding-bottom: 50px;
   }
   
   .divgit { grid-area: 1 / 2 / 2 / 3; }
