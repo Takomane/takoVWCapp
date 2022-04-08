@@ -54,6 +54,10 @@ select {
   font: inherit;
 }
 
+img {
+  border: 3px solid #fff;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
@@ -96,9 +100,7 @@ p {
   padding-bottom: 50px;
   }
 
-  .div1 { 
-    grid-area: 1 / 1 / 2 / 2;
-  }
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
 
   .div1animation{
     animation: myanimationdiv1 4s;
@@ -113,9 +115,7 @@ p {
 
   .div3 { grid-area: 2 / 1 / 3 / 2; }
 
-  .div4 { 
-    grid-area: 2 / 2 / 3 / 3;
-   }
+  .div4 { grid-area: 2 / 2 / 3 / 3; }
 
   .div4animation{
     animation: myanimationdiv4 4s;
