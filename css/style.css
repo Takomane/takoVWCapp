@@ -308,7 +308,7 @@ footer {
 }
 
 
-/*this is for the contact me grid */
+/*this is for the contact me page */
 .parentcontact {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -323,4 +323,55 @@ footer {
   .divtwit { grid-area: 2 / 1 / 3 / 2; }
   .divlink { grid-area: 3 / 2 / 4 / 3; }
   .divemail { grid-area: 2 / 3 / 3 / 4; }
-  .divcontactpic { grid-area: 2 / 2 / 3 / 3; }
+  .divcontactpic { grid-area: 2 / 2 / 3 / 3;}
+
+  @keyframes divcontactpicani {
+    from {
+      opacity: 0;
+    }
+    100% { 
+      opacity: 1;
+  }
+  }
+
+  .contactpic{
+    animation: divcontactpicani 2s;
+    border-radius: 50%;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  @keyframes divgitani {
+    from {
+      opacity: 0;
+    }
+    100% { 
+      opacity: 1;
+  }
+  }
+  @keyframes divtwitani {
+    from {
+      opacity: 0;
+    }
+    100% { 
+      opacity: 1;
+  }
+  }
+  @keyframes divlinkani {
+    from {
+      opacity: 0;
+    }
+    100% { 
+      opacity: 1;
+  }
+  }
+  @keyframes divemailani {
+    from {
+      opacity: 0;
+    }
+    100% { 
+      opacity: 1;
+  }
+  }
