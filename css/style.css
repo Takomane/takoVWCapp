@@ -351,6 +351,15 @@ footer {
       opacity: 1;
   }
   }
+  .gitpic{
+    animation: divgitani 2s;
+    border-radius: 50%;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
   @keyframes divtwitani {
     from {
       opacity: 0;
@@ -359,6 +368,15 @@ footer {
       opacity: 1;
   }
   }
+  .twitpic{
+    animation: divtwitani 2s;
+    border-radius: 50%;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
   @keyframes divlinkani {
     from {
       opacity: 0;
@@ -367,6 +385,15 @@ footer {
       opacity: 1;
   }
   }
+  .linkpic{
+    animation: divlinkani 2s;
+    border-radius: 50%;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
   @keyframes divemailani {
     from {
       opacity: 0;
@@ -375,3 +402,11 @@ footer {
       opacity: 1;
   }
   }
+  .emailpic{
+    animation: divemailani 2s;
+    border-radius: 50%;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
