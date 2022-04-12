@@ -410,3 +410,8 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+
+button {
+  background-color:#ECA6A6;
+  border: #ECA6A6;
+}
