@@ -131,12 +131,12 @@ p {
 }
 
   .div5animation{
-   animation: myanimationdiv5 4s;
+    animation: myanimationdiv5 4s;
     border-radius: 50%;
     width: 75%;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .div6 { grid-area: 3 / 2 / 4 / 3; }
@@ -274,32 +274,39 @@ footer {
 @keyframes myanimationdiv1 {
   from {
     margin-right: -100%;
+    opacity: 0;
   }
   100% { 
     margin-right: 12%; 
     transform: rotate(1440deg);
+    opacity: 1;
 }
 }
 
 @keyframes myanimationdiv4 {
   from {
     margin-left: -100%;
+    opacity: 0;
   }
   100% { 
     margin-left: 12%; 
     transform: rotate(1440deg); 
+    opacity: 1;
 }
 }
 
 @keyframes myanimationdiv5 {
   from {
     margin-right: -100%;
+    opacity: 0;
   }
   100% { 
     margin-right: 12%; 
     transform: rotate(1440deg); 
+    opacity: 1;
 }
 }
+
 
 /*this is for the contact me grid */
 .parentcontact {
