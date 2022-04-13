@@ -333,7 +333,7 @@ footer {
   .divemail { grid-area: 2 / 3 / 3 / 4; }
   .divcontactpic { grid-area: 2 / 2 / 3 / 3;}
 
-  @keyframes divcontactpicani {
+  @keyframes Fadein {
     from {
       opacity: 0;
     }
@@ -343,7 +343,7 @@ footer {
   }
 
   .contactpic{
-    animation: divcontactpicani 2s;
+    animation: Fadein 2s;
     border: #ECA6A6;
     width: 75%;
     display: block;
@@ -351,16 +351,8 @@ footer {
     margin-right: auto;
 }
 
-  @keyframes divgitani {
-    from {
-      opacity: 0;
-    }
-    100% { 
-      opacity: 1;
-  }
-  }
   .gitpic{
-    animation: divgitani 2s;
+    animation: Fadein 2s;
     border: #ECA6A6;
     width: 75%;
     display: block;
@@ -368,16 +360,8 @@ footer {
     margin-right: auto;
 }
 
-  @keyframes divtwitani {
-    from {
-      opacity: 0;
-    }
-    100% { 
-      opacity: 1;
-  }
-  }
   .twitpic{
-    animation: divtwitani 2s;
+    animation: Fadein 2s;
     border: #ECA6A6;
     display: block;
     margin-left: auto;
@@ -385,16 +369,8 @@ footer {
     width: 75%;
 }
 
-  @keyframes divlinkani {
-    from {
-      opacity: 0;
-    }
-    100% { 
-      opacity: 1;
-  }
-  }
   .linkpic{
-    animation: divlinkani 2s;
+    animation: Fadein 2s;
     border: #ECA6A6;
     display: block;
     margin-left: auto;
@@ -402,16 +378,8 @@ footer {
     width: 75%;
 }
 
-  @keyframes divemailani {
-    from {
-      opacity: 0;
-    }
-    100% { 
-      opacity: 1;
-  }
-  }
   .emailpic{
-    animation: divemailani 2s;
+    animation: Fadein 2s;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -444,7 +412,27 @@ button:hover{
   .divwhere { grid-area: 3 / 3 / 4 / 5; }
   .divhire { grid-area: 2 / 2 / 4 / 3; }
   .divpicleft { grid-area: 2 / 1 / 3 / 2; }
+
+  .leftpic{
+    animation: Fadein 2s;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: #ECA6A6;
+    width: 75%;
+}
   .divpicright { grid-area: 2 / 5 / 3 / 6; }
+
+  .rightpic{
+    animation: Fadein 2s;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: #ECA6A6;
+    width: 100%;
+}
 
 /* spinning record */
 svg {
