@@ -398,41 +398,59 @@ button:hover{
 /*dj page */
 .parentDJ {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 6px;
   grid-row-gap: 6px;
   Padding-top: 50px;
   padding-bottom: 50px;
   }
-  
-  .divrecord { grid-area: 2 / 3 / 3 / 4; }
-  .divhistory { grid-area: 1 / 2 / 2 / 4; }
-  .divwhat { grid-area: 1 / 4 / 3 / 5; }
-  .divwhere { grid-area: 3 / 3 / 4 / 5; }
-  .divhire { grid-area: 2 / 2 / 4 / 3; }
-  .divpicleft { grid-area: 2 / 1 / 3 / 2; }
 
   .leftpic{
     animation: Fadein 2s;
-    border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border: #ECA6A6;
     width: 75%;
 }
-  .divpicright { grid-area: 2 / 5 / 3 / 6; }
 
   .rightpic{
     animation: Fadein 2s;
-    border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border: #ECA6A6;
     width: 100%;
 }
+
+.bottompic{
+  animation: Fadein 2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: #ECA6A6;
+  width: 100%;
+}
+
+.toppic{
+  animation: Fadein 2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: #ECA6A6;
+  width: 100%;
+}
+
+  .divrecord { grid-area: 3 / 3 / 5 / 5; }
+  .divhistory { grid-area: 1 / 1 / 3 / 3; }
+  .divwhat { grid-area: 1 / 5 / 3 / 7; }
+  .divwhere { grid-area: 5 / 1 / 7 / 3; }
+  .divhire { grid-area: 5 / 5 / 7 / 7; }
+  .divpictop { grid-area: 1 / 3 / 3 / 5; }
+  .divpicbottom { grid-area: 5 / 3 / 7 / 5; }
+  .divpicleft { grid-area: 3 / 1 / 5 / 3; }
+  .divpicright { grid-area: 3 / 5 / 5 / 7; }
 
 /* spinning record */
 svg {
