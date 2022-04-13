@@ -202,7 +202,10 @@ footer {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #fff}
+.dropdown-content a:hover {
+  background-color: #fff;
+  border: thin black solid;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -336,7 +339,7 @@ footer {
 
   .contactpic{
     animation: divcontactpicani 2s;
-    border-radius: 50%;
+    border: #ECA6A6;
     width: 75%;
     display: block;
     margin-left: auto;
@@ -353,7 +356,7 @@ footer {
   }
   .gitpic{
     animation: divgitani 2s;
-    border-radius: 50%;
+    border: #ECA6A6;
     width: 75%;
     display: block;
     margin-left: auto;
@@ -370,11 +373,11 @@ footer {
   }
   .twitpic{
     animation: divtwitani 2s;
-    border-radius: 50%;
-    width: 75%;
+    border: #ECA6A6;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 75%;
 }
 
   @keyframes divlinkani {
@@ -387,11 +390,11 @@ footer {
   }
   .linkpic{
     animation: divlinkani 2s;
-    border-radius: 50%;
-    width: 75%;
+    border: #ECA6A6;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 75%;
 }
 
   @keyframes divemailani {
@@ -404,14 +407,18 @@ footer {
   }
   .emailpic{
     animation: divemailani 2s;
-    border-radius: 50%;
-    width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: #ECA6A6;
+    width: 75%;
 }
 
 button {
   background-color:#ECA6A6;
   border: #ECA6A6;
+}
+button:hover{
+  margin: 0px;
+  border: thin black solid;
 }
