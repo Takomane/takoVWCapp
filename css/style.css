@@ -61,12 +61,12 @@ img {
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
-  background-color: #ECA6A6;
+  background-color: #FF8484;
   height: 100%;
 }
 
 nav {
-  background-color: #ECA6A6;
+  background-color: #FF8484;
   color: #fff;
   padding: 1rem;
 }
@@ -105,9 +105,9 @@ li {
   padding-bottom: 50px;
   }
 
-  .div1 { grid-area: 1 / 1 / 2 / 2; }
+.div1 { grid-area: 1 / 1 / 2 / 2; }
 
-  .div1animation{
+.div1animation{
     animation: myanimationdiv1 4s;
     border-radius: 50%;
     width: 75%;
@@ -116,13 +116,13 @@ li {
     margin-right: auto;
   }
 
-  .div2 { grid-area: 1 / 2 / 2 / 3; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
 
-  .div3 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 2 / 1 / 3 / 2; }
 
-  .div4 { grid-area: 2 / 2 / 3 / 3; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
 
-  .div4animation{
+.div4animation{
     animation: myanimationdiv4 4s;
     border-radius: 50%;
     width: 75%;
@@ -131,11 +131,11 @@ li {
     margin-right: auto;
   }
 
-  .div5 { 
+.div5 { 
     grid-area: 3 / 1 / 4 / 2; 
 }
 
-  .div5animation{
+.div5animation{
     animation: myanimationdiv5 4s;
     border-radius: 50%;
     width: 75%;
@@ -160,7 +160,7 @@ content-wrap {
 }
 
 header {
-  background-color: #ECA6A6;
+  background-color: #FF8484;
   color: #fff;
   padding: .75rem;
   width: 100%;
@@ -172,7 +172,7 @@ footer {
   left: 0px;
   width: 100%;
   height: 2.5rem;
-  background-color: #ECA6A6;
+  background-color: #FF8484;
   text-align: center;
 }
 
@@ -259,7 +259,7 @@ footer {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  60% { border-color: #ECA6A6; }
+  60% { border-color: #FF8484; }
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -344,7 +344,7 @@ footer {
 
   .contactpic{
     animation: Fadein 2s;
-    border: #ECA6A6;
+    border: #FF8484;
     width: 75%;
     display: block;
     margin-left: auto;
@@ -353,7 +353,7 @@ footer {
 
   .gitpic{
     animation: Fadein 2s;
-    border: #ECA6A6;
+    border: #FF8484;
     width: 75%;
     display: block;
     margin-left: auto;
@@ -362,7 +362,7 @@ footer {
 
   .twitpic{
     animation: Fadein 2s;
-    border: #ECA6A6;
+    border: #FF8484;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -371,7 +371,7 @@ footer {
 
   .linkpic{
     animation: Fadein 2s;
-    border: #ECA6A6;
+    border: #FF8484;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -383,13 +383,13 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: #ECA6A6;
+    border: #FF8484;
     width: 75%;
 }
 
 button {
-  background-color:#ECA6A6;
-  border: #ECA6A6;
+  background-color:#FF8484;
+  border: #FF8484;
 }
 button:hover{
   margin: 0px;
@@ -411,7 +411,7 @@ button:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: #ECA6A6;
+    border: #FF8484;
     width: 75%;
 }
 
@@ -420,7 +420,7 @@ button:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: #ECA6A6;
+    border: #FF8484;
     width: 100%;
 }
 
@@ -429,7 +429,7 @@ button:hover{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: #ECA6A6;
+  border: #FF8484;
   width: 100%;
 }
 
@@ -438,7 +438,7 @@ button:hover{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: #ECA6A6;
+  border: #FF8484;
   width: 100%;
 }
 
