@@ -475,3 +475,7 @@ svg {
 .line {
   stroke: white;
 }
+
+.hidden {
+  opacity: 0;
+}
