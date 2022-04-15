@@ -1,27 +1,32 @@
-(function() {
-    var elements;
-    var windowHeight;
-  
-    function init() {
-      elements = document.querySelectorAll('hidden');
-      windowHeight = window.innerHeight;
-    }
-  
-    function checkPosition() {
-      for (var i = 0; i < elements.length; i++) {
-        var element = elements[i];
-        var positionFromTop = elements[i].getBoundingClientRect().top;
-  
-        if (positionFromTop - windowHeight <= 0) {
-          element.classList.add('div5animation');
-          element.classList.remove('hidden');
-        }
-      }
-    }
-  
-    window.addEventListener('scroll', checkPosition);
-    window.addEventListener('resize', init);
-  
-    init();
-    checkPosition();
-  })();
+const scrollOffset = 100;
+ 
+const scrollElement = document.querySelector("hidden");
+ 
+const elementInView = (el, offset = 0) => {
+  const elementTop = el.getBoundingClientRect().top;
+ 
+  return (
+    elementTop <= 
+    ((window.innerHeight || document.documentElement.clientHeight) - offset)
+  );
+};
+ 
+const displayScrollElement = () => {
+  scrollElement.classList.add('div5');
+}
+ 
+const hideScrollElement = () => {
+  scrollElement.classList.remove('hidden');
+}
+ 
+const handleScrollAnimation = () => {
+  if (elementInView(scrollElement, scrollOffset)) {
+      displayScrollElement();
+  } else {
+    hideScrollElement();
+  }
+}
+ 
+window.addEventListener('scroll', () => {
+  handleScrollAnimation();
+})
