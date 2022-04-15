@@ -2,7 +2,7 @@ const scrollOffset = 100;
  
 const scrollElement = document.querySelector("hidden");
  
-const elementInView = (el, offset = 0) => {
+const elementInView = (el, _scrolloffset = 0) => {
   const elementTop = el.getBoundingClientRect().top;
  
   return (
