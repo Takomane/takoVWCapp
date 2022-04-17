@@ -7,6 +7,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Remove default margin */
@@ -20,12 +21,12 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 5;
+  margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -61,12 +62,12 @@ img {
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
-  background-color: #FF8484;
+  background-color: #ff8484;
   height: 100%;
 }
 
 nav {
-  background-color: #FF8484;
+  background-color: #ff8484;
   color: #fff;
   padding: 1rem;
 }
@@ -83,10 +84,10 @@ h1 {
   margin-top: 0px;
   margin-bottom: 1px;
   font-size: 4vw;
- }
+}
 
 p {
-  text-align:center;
+  text-align: center;
   font-size: 2vw;
 }
 
@@ -101,50 +102,60 @@ li {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 50px;
-  Padding-top: 50px;
+  padding-top: 50px;
   padding-bottom: 50px;
-  }
-
-.div1 { grid-area: 1 / 1 / 2 / 2; }
-
-.div1animation{
-    animation: myanimationdiv1 4s;
-    border-radius: 50%;
-    width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-.div2 { grid-area: 1 / 2 / 2 / 3; }
-
-.div3 { grid-area: 2 / 1 / 3 / 2; }
-
-.div4 { grid-area: 2 / 2 / 3 / 3; }
-
-.div4animation{
-    animation: myanimationdiv4 4s;
-    border-radius: 50%;
-    width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-.div5 { 
-    grid-area: 3 / 1 / 4 / 2; 
 }
 
-.div5animation{
-    animation: myanimationdiv5 4s;
-    border-radius: 50%;
-    width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
 }
 
-.div6 { grid-area: 3 / 2 / 4 / 3; }
+.div1animation {
+  animation: myanimationdiv1 4s;
+  border-radius: 50%;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.div4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.div4animation {
+  animation: myanimationdiv4 4s;
+  border-radius: 50%;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div5 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.div5animation {
+  animation: myanimationdiv5 4s;
+  border-radius: 50%;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div6 {
+  grid-area: 3 / 2 / 4 / 3;
+}
 
 div {
   text-align: center;
@@ -160,9 +171,9 @@ content-wrap {
 }
 
 header {
-  background-color: #FF8484;
+  background-color: #ff8484;
   color: #fff;
-  padding: .75rem;
+  padding: 0.75rem;
   width: 100%;
 }
 
@@ -172,7 +183,7 @@ footer {
   left: 0px;
   width: 100%;
   height: 2.5rem;
-  background-color: #FF8484;
+  background-color: #ff8484;
   text-align: center;
 }
 
@@ -196,7 +207,7 @@ footer {
   position: absolute;
   background-color: #fff;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -242,32 +253,39 @@ footer {
   transform: translate(-50%, -50%);
   color: white;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
-  animation: 
-    typing 5s steps(40, end),
-    blink-caret .75s step-end infinite;
+  letter-spacing: 0.15em;
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 60% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  60% { border-color: #FF8484; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  60% {
+    border-color: #ff8484;
+  }
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -284,11 +302,11 @@ footer {
     margin-right: -100%;
     opacity: 0;
   }
-  100% { 
-    margin-right: 12%; 
+  100% {
+    margin-right: 12%;
     transform: rotate(1440deg);
     opacity: 1;
-}
+  }
 }
 
 @keyframes myanimationdiv4 {
@@ -296,11 +314,11 @@ footer {
     margin-left: -100%;
     opacity: 0;
   }
-  100% { 
-    margin-left: 12%; 
-    transform: rotate(1440deg); 
+  100% {
+    margin-left: 12%;
+    transform: rotate(1440deg);
     opacity: 1;
-}
+  }
 }
 
 @keyframes myanimationdiv5 {
@@ -308,13 +326,12 @@ footer {
     margin-right: -100%;
     opacity: 0;
   }
-  100% { 
-    margin-right: 12%; 
-    transform: rotate(1440deg); 
+  100% {
+    margin-right: 12%;
+    transform: rotate(1440deg);
     opacity: 1;
+  }
 }
-}
-
 
 /*this is for the contact me page */
 .parentcontact {
@@ -323,78 +340,89 @@ footer {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 6px;
   grid-row-gap: 6px;
-  Padding-top: 50px;
+  padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.divgit {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.divtwit {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.divlink {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.divemail {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.divcontactpic {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+@keyframes Fadein {
+  from {
+    opacity: 0;
   }
-  
-  .divgit { grid-area: 1 / 2 / 2 / 3; }
-  .divtwit { grid-area: 2 / 1 / 3 / 2; }
-  .divlink { grid-area: 3 / 2 / 4 / 3; }
-  .divemail { grid-area: 2 / 3 / 3 / 4; }
-  .divcontactpic { grid-area: 2 / 2 / 3 / 3;}
-
-  @keyframes Fadein {
-    from {
-      opacity: 0;
-    }
-    100% { 
-      opacity: 1;
+  100% {
+    opacity: 1;
   }
-  }
-
-  .contactpic{
-    animation: Fadein 2s;
-    border: #FF8484;
-    width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-  .gitpic{
-    animation: Fadein 2s;
-    border: #FF8484;
-    width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.contactpic {
+  animation: Fadein 2s;
+  border: #ff8484;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-  .twitpic{
-    animation: Fadein 2s;
-    border: #FF8484;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
+.gitpic {
+  animation: Fadein 2s;
+  border: #ff8484;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-  .linkpic{
-    animation: Fadein 2s;
-    border: #FF8484;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
+.twitpic {
+  animation: Fadein 2s;
+  border: #ff8484;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
 
-  .emailpic{
-    animation: Fadein 2s;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: #FF8484;
-    width: 75%;
+.linkpic {
+  animation: Fadein 2s;
+  border: #ff8484;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.emailpic {
+  animation: Fadein 2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: #ff8484;
+  width: 75%;
 }
 
 button {
-  background-color:#FF8484;
-  border: #FF8484;
+  background-color: #ff8484;
+  border: #ff8484;
 }
-button:hover{
+button:hover {
   margin: 0px;
   border: thin black solid;
 }
+
 /*dj page */
 .parentDJ {
   display: grid;
@@ -402,61 +430,79 @@ button:hover{
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 6px;
   grid-row-gap: 6px;
-  Padding-top: 50px;
+  padding-top: 50px;
   padding-bottom: 50px;
-  }
-
-  .leftpic{
-    animation: Fadein 2s;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: #FF8484;
-    width: 75%;
 }
 
-  .rightpic{
-    animation: Fadein 2s;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: #FF8484;
-    width: 100%;
-}
-
-.bottompic{
+.leftpic {
   animation: Fadein 2s;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: #FF8484;
-  width: 100%;
+  border: #ff8484;
+  width: 75%;
 }
 
-.toppic{
+.rightpic {
   animation: Fadein 2s;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: #FF8484;
+  border: #ff8484;
   width: 100%;
 }
 
-  .divrecord { grid-area: 3 / 3 / 5 / 5; }
-  .divhistory { grid-area: 1 / 1 / 3 / 3; }
-  .divwhat { grid-area: 1 / 5 / 3 / 7; }
-  .divwhere { grid-area: 5 / 1 / 7 / 3; }
-  .divhire { grid-area: 5 / 5 / 7 / 7; }
-  .divpictop { grid-area: 1 / 3 / 3 / 5; }
-  .divpicbottom { grid-area: 5 / 3 / 7 / 5; }
-  .divpicleft { grid-area: 3 / 1 / 5 / 3; }
-  .divpicright { grid-area: 3 / 5 / 5 / 7; }
+.bottompic {
+  animation: Fadein 2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: #ff8484;
+  width: 100%;
+}
+
+.toppic {
+  animation: Fadein 2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: #ff8484;
+  width: 100%;
+}
+
+.divrecord {
+  grid-area: 3 / 3 / 5 / 5;
+}
+.divhistory {
+  grid-area: 1 / 1 / 3 / 3;
+}
+.divwhat {
+  grid-area: 1 / 5 / 3 / 7;
+}
+.divwhere {
+  grid-area: 5 / 1 / 7 / 3;
+}
+.divhire {
+  grid-area: 5 / 5 / 7 / 7;
+}
+.divpictop {
+  grid-area: 1 / 3 / 3 / 5;
+}
+.divpicbottom {
+  grid-area: 5 / 3 / 7 / 5;
+}
+.divpicleft {
+  grid-area: 3 / 1 / 5 / 3;
+}
+.divpicright {
+  grid-area: 3 / 5 / 5 / 7;
+}
 
 /* spinning record */
 svg {
   height: auto;
   width: 100%;
-  background: #FF8484;
+  background: #ff8484;
 }
 
 #label {
@@ -464,7 +510,9 @@ svg {
 }
 
 @keyframes spin {
-  100%{transform: rotate(360deg);}
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 #record {
