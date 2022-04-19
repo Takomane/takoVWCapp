@@ -83,12 +83,12 @@ h1 {
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 1px;
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 p {
   text-align: center;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 li {
@@ -100,10 +100,6 @@ li {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .div1 {
@@ -113,7 +109,7 @@ li {
 .div1animation {
   animation: myanimationdiv1 4s;
   border-radius: 50%;
-  width: 75%;
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -134,7 +130,7 @@ li {
 .div4animation {
   animation: myanimationdiv4 4s;
   border-radius: 50%;
-  width: 75%;
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -147,7 +143,7 @@ li {
 .div5animation {
   animation: myanimationdiv5 4s;
   border-radius: 50%;
-  width: 75%;
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
