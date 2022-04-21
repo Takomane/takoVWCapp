@@ -88,7 +88,7 @@ h1 {
 
 p {
   text-align: center;
-  font-size: 1vw;
+  font-size: 2vw;
 }
 
 li {
@@ -115,7 +115,7 @@ li {
 .div1animation {
   animation: myanimationdiv1 4s;
   border-radius: 50%;
-  width: 50%;
+  width: 75%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -136,7 +136,7 @@ li {
 .div4animation {
   animation: myanimationdiv4 4s;
   border-radius: 50%;
-  width: 50%;
+  width: 75%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -149,7 +149,7 @@ li {
 .div5animation {
   animation: myanimationdiv5 4s;
   border-radius: 50%;
-  width: 50%;
+  width: 75%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -497,13 +497,18 @@ svg {
 
 .hidden {
   opacity: 0;
-}
-/**
-.hidden1 {
-  opacity: 0;
+  border-radius: 50%;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hidden2 {
   opacity: 0;
+  border-radius: 50%;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-*/

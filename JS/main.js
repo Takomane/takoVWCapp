@@ -17,13 +17,3 @@ window.addEventListener("scroll", () => {
     content.classList.remove("hidden2");
   }
 });
-
-window.addEventListener("scroll", () => {
-  let content = document.querySelector(".div1 img");
-  let contentPosition = content.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight;
-  if (contentPosition > screenPosition) {
-    content.classList.add("div1animation");
-    content.classList.remove("hidden1");
-  }
-});
